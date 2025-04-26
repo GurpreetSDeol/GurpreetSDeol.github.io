@@ -10,7 +10,7 @@
       margin: 40px;
       background-color: #0D1B2A;
       color: #E0E1DD;
-      text-align: center; /* Center everything globally */
+      text-align: center;
     }
 
     /* ✨ HEADER */
@@ -27,7 +27,7 @@
     h2 {
       color: #1B98E0;
       border-bottom: 2px solid #1B98E0;
-      display: inline-block; /* So border is only under text */
+      display: inline-block;
       margin-bottom: 20px;
     }
 
@@ -44,9 +44,9 @@
     /* ✨ SKILLS GRID */
     .skills-grid {
       display: grid;
-      grid-template-columns: repeat(3, 1fr); /* Always 3 per row */
+      grid-template-columns: repeat(3, 1fr);
       gap: 20px;
-      justify-items: center; /* Center each skill card */
+      justify-items: center;
       max-width: 1000px;
       margin: 0 auto;
       margin-top: 20px;
@@ -57,7 +57,13 @@
       padding: 15px;
       border-radius: 8px;
       box-shadow: 0 2px 5px rgba(255,255,255,0.1);
-      width: 90%; /* Make each card smaller and consistent */
+      width: 90%;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .skills-grid div:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 4px 15px rgba(27,152,224,0.4); /* Blue glow on hover */
     }
 
     /* ✨ PROJECT LIST */
@@ -73,7 +79,13 @@
       border-radius: 8px;
       width: 90%;
       max-width: 800px;
-      text-align: left; /* Keep project text left-aligned for readability */
+      text-align: left;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    li:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 4px 15px rgba(27,152,224,0.4); /* Same hover effect */
     }
 
     /* ✨ DOWNLOAD RESUME BUTTON */
@@ -85,12 +97,13 @@
       border-radius: 5px;
       text-decoration: none;
       font-weight: bold;
-      transition: background-color 0.3s ease;
+      transition: background-color 0.3s ease, transform 0.3s ease;
       margin-top: 10px;
     }
 
     .button:hover {
       background-color: #3AA7E3;
+      transform: translateY(-3px);
     }
 
     /* ✨ FOOTER */
@@ -151,3 +164,4 @@
 
 </body>
 </html>
+
