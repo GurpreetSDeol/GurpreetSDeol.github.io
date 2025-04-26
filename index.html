@@ -63,4 +63,91 @@
     /* ✨ PROJECT LIST */
     ul {
       list-style-type: none;
-      pad
+      padding: 0;
+    }
+
+    li {
+      background: #1B263B;
+      padding: 15px;
+      margin: 10px auto;
+      border-radius: 8px;
+      width: 90%;
+      max-width: 800px;
+      text-align: left; /* Keep project text left-aligned for readability */
+    }
+
+    /* ✨ DOWNLOAD RESUME BUTTON */
+    .button {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #1B98E0;
+      color: white;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+      margin-top: 10px;
+    }
+
+    .button:hover {
+      background-color: #3AA7E3;
+    }
+
+    /* ✨ FOOTER */
+    footer {
+      margin-top: 60px;
+    }
+
+    footer p {
+      font-size: 14px;
+      color: #A9B5C2;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>Gurpreet Deol</h1>
+    <p>I’m a Data Scientist with a background in Physics and expertise in building scalable data pipelines, 
+      predictive ML models and dynamic dashboards. I enjoy working on unique and challenging projects and exploring the wide capabilities and applications of data in the real world.</p>
+  </header>
+
+  <section>
+    <h2>Skills</h2>
+    <div class="skills-grid">
+      <div><strong>Tech Stack:</strong> Python, SQL, Matlab, R</div>
+      <div><strong>Data Libraries:</strong> Pandas, Numpy, Scikit-Learn, Keras, TensorFlow, Geopandas, Psycopg2</div>
+      <div><strong>Reporting & Visualization:</strong> PowerBI, Excel, Matplotlib, Seaborn, LaTeX</div>
+      <div><strong>Cloud Tools:</strong> AWS, Azure</div>
+      <div><strong>Big Data Tools:</strong> PySpark, Hadoop</div>
+      <div><strong>Other Tools:</strong> Git/GitHub, Docker, VS Code, PostGIS, Jupyter Notebook</div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Projects</h2>
+    <ul>
+      <li>
+        <a href="https://github.com/GurpreetSDeol/Predicting-Illegal-Fishing-using-Machine-Learning" target="_blank">
+          Predicting Illegal Fishing using ML
+        </a> - Built a Random Forest model to predict vessel fishing activity from geospatial data and classify potential illegal activities based on Marine Protected Zones.
+      </li>
+      <li>
+        <a href="https://github.com/GurpreetSDeol/Public-Health-and-Air-Quality-Impact-Analysis-via-ETL-Data-Pipeline" target="_blank">
+          API Pollution Dashboard
+        </a> - Developed a real-time dashboard aggregating pollution and weather data for major global cities via public APIs.
+      </li>
+    </ul>
+  </section>
+
+  <footer>
+    <p>Contact: Gurpreet.S.Deol@Outlook.com | 
+      <a href="https://github.com/GurpreetSDeol" target="_blank">GitHub</a> | 
+      <a href="https://www.linkedin.com/in/gurpreet-deol-19800b22b/" target="_blank">LinkedIn</a> |
+      <a href="CV - Gurpreet Deol.pdf" download class="button">Download Resume</a>
+    </p>
+  </footer>
+
+</body>
+</html>
