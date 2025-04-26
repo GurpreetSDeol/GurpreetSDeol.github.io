@@ -67,25 +67,37 @@
     }
 
     /* ✨ PROJECT LIST */
-    ul {
+    .projects-list {
       list-style-type: none;
       padding: 0;
+      max-width: 800px;
+      margin: 0 auto;
+      text-align: left;
     }
 
-    li {
+    .projects-list li {
       background: #1B263B;
-      padding: 15px;
-      margin: 10px auto;
+      padding: 20px;
+      margin: 15px 0;
       border-radius: 8px;
-      width: 90%;
-      max-width: 800px;
-      text-align: left;
       transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
 
-    li:hover {
+    .projects-list li:hover {
       transform: translateY(-5px);
-      box-shadow: 0 4px 15px rgba(27,152,224,0.4); /* Same hover effect */
+      box-shadow: 0 4px 15px rgba(27,152,224,0.4);
+    }
+
+    .projects-list a {
+      font-size: 18px;
+      font-weight: bold;
+      color: #1B98E0;
+    }
+
+    .projects-list p {
+      font-size: 16px;
+      margin-top: 5px;
+      color: #E0E1DD;
     }
 
     /* ✨ DOWNLOAD RESUME BUTTON */
@@ -142,37 +154,38 @@
 
   <section>
     <h2>Projects</h2>
-    <ul>
+    <div class="projects-list">
       <li>
         <a href="https://github.com/GurpreetSDeol/Predicting-Illegal-Fishing-using-Machine-Learning" target="_blank">
           Predicting Illegal Fishing using ML
-        </a> - Built a Random Forest model to predict vessel fishing activity from geospatial data and classify potential illegal activities based on Marine Protected Zones.
+        </a>
+        <p>Built a Random Forest model to predict vessel fishing activity from geospatial data and classify potential illegal activities based on Marine Protected Zones.</p>
       </li>
       <li>
         <a href="https://github.com/GurpreetSDeol/Public-Health-and-Air-Quality-Impact-Analysis-via-ETL-Data-Pipeline" target="_blank">
           API Pollution Dashboard
-        </a> - Developed a real-time dashboard aggregating pollution and weather data for major global cities via public APIs.
+        </a>
+        <p>Developed a real-time dashboard aggregating pollution and weather data for major global cities via public APIs.</p>
       </li>
       <li>
         <a href="https://github.com/GurpreetSDeol/Football-Analysis-using-PCA" target="_blank">
           Football Analysis using Principal Component Analysis 
-        </a> - Analysed football data across 13 years to understand tactucal shifts and trends in playing styles across Europe.
+        </a>
+        <p>Analysed football data across 13 years to understand tactical shifts and trends in playing styles across Europe.</p>
       </li>
-       <li>
+      <li>
         <a href="https://github.com/GurpreetSDeol/Euro-2024-Match-Predictor-" target="_blank">
           Euro 2024 Match Predictor  
-        </a> - A project aimed at predicting the winner of the 2024 Euros using a Random Forest model, correctly predicted 6/8 Quarter Finalists.
+        </a>
+        <p>A project aimed at predicting the winner of the 2024 Euros using a Random Forest model, correctly predicted 6/8 Quarter Finalists.</p>
       </li>
-
-      
-    </ul>
+    </div>
   </section>
 
   <footer>
     <p>Contact: Gurpreet.S.Deol@Outlook.com | 
       <a href="https://github.com/GurpreetSDeol" target="_blank">GitHub</a> | 
       <a href="https://www.linkedin.com/in/gurpreet-deol-19800b22b/" target="_blank">LinkedIn</a> |
-    
     </p>
   </footer>
 
