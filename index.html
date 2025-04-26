@@ -3,34 +3,37 @@
 <head>
   <meta charset="UTF-8">
   <title>Gurpreet Deol - Portfolio</title>
-</head>
-
   <style>
-    
-/* ✨ BODY: Page background and general text color */
+    /* ✨ BODY */
     body {
       font-family: Arial, sans-serif;
       margin: 40px;
-      background-color: #0D1B2A; /* Dark navy background */
-      color: #E0E1DD; /* Light gray text */
+      background-color: #0D1B2A;
+      color: #E0E1DD;
+      text-align: center; /* Center everything globally */
     }
 
-    /* ✨ HEADER: Title and intro text */
+    /* ✨ HEADER */
+    header {
+      margin-bottom: 40px;
+    }
+
     header h1, header p {
-      color: #E0E1DD; /* Same as general text */
+      color: #E0E1DD;
+      margin-bottom: 10px;
     }
 
-    /* ✨ SECTION HEADINGS (Skills, Projects, etc.) */
+    /* ✨ SECTION HEADINGS */
     h2 {
-      color: #1B98E0; /* Bright blue for section titles */
+      color: #1B98E0;
       border-bottom: 2px solid #1B98E0;
-      padding-bottom: 5px;
-      margin-top: 40px;
+      display: inline-block; /* So border is only under text */
+      margin-bottom: 20px;
     }
 
-    /* ✨ LINKS (GitHub, LinkedIn, Project Links) */
+    /* ✨ LINKS */
     a {
-      color: #1B98E0; /* Same bright blue for links */
+      color: #1B98E0;
       text-decoration: none;
     }
 
@@ -38,103 +41,26 @@
       text-decoration: underline;
     }
 
-    /* ✨ SKILLS GRID: Each skill block */
+    /* ✨ SKILLS GRID */
     .skills-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      grid-template-columns: repeat(3, 1fr); /* Always 3 per row */
       gap: 20px;
+      justify-items: center; /* Center each skill card */
+      max-width: 1000px;
+      margin: 0 auto;
       margin-top: 20px;
     }
 
     .skills-grid div {
-      background: #1B263B; /* Dark blue-gray card background */
+      background: #1B263B;
       padding: 15px;
       border-radius: 8px;
-      box-shadow: 0 2px 5px rgba(255,255,255,0.1); /* Light white shadow */
+      box-shadow: 0 2px 5px rgba(255,255,255,0.1);
+      width: 90%; /* Make each card smaller and consistent */
     }
 
-    /* ✨ PROJECT LIST: Each project link */
-    li {
-      background: #1B263B; /* Same as skills cards */
-      padding: 15px;
-      margin-bottom: 10px;
-      border-radius: 8px;
+    /* ✨ PROJECT LIST */
+    ul {
       list-style-type: none;
-    }
-
-    /* ✨ DOWNLOAD RESUME BUTTON */
-    .button {
-      display: inline-block;
-      padding: 10px 20px;
-      background-color: #1B98E0; /* Bright blue button */
-      color: white;
-      border-radius: 5px;
-      text-decoration: none;
-      font-weight: bold;
-      transition: background-color 0.3s ease;
-    }
-
-    .button:hover {
-      background-color: #3AA7E3; /* Slightly lighter blue on hover */
-    }
-
-    /* ✨ FOOTER */
-    footer p {
-      margin-top: 40px;
-      font-size: 14px;
-      color: #A9B5C2; /* Softer gray for footer */
-    }
-
-  </style>
-</head>
-<body>
-
-  <header>
-    <h1>Gurpreet Deol</h1>
-    <p>I’m a Data Scientist with a background in Physics and expertise in building scalable data pipelines, 
-      predictive ML models and dynamic dashboards. I enjoy working on unique and challenging projects and exploring the wide capabilities and applications of data in the real world.</p>
-  </header>
-
-<section>
-  <h2>Skills</h2>
-  <div class="skills-grid">
-    <div><strong>Tech Stack:</strong> Python, SQL, Matlab and R</div>
-    <div><strong>Data Libraries:</strong> Pandas, Numpy, Scikit-Learn, Keras, TensorFlow, Geopandas and Psycopg2</div>
-    <div><strong>Reporting & Visualization:</strong> PowerBI, Excel, Matplotlib, Seaborn and LaTeX</div>
-    <div><strong>Cloud Tools: </strong> AWS and Azure</div>
-    <div><strong>Big Data Tools:</strong> PySpark and Hadoop</div>
-    <div><strong>Other Tools:</strong> Git/GitHub, Docker, VS Code, PostGIS and Jupyter Notebook</div>
-  </div>
-</section>
-
-  
-  <section>
-    <h2>Projects</h2>
-    <ul>
-      <li>
-  <a href="https://github.com/GurpreetSDeol/Predicting-Illegal-Fishing-using-Machine-Learning" target="_blank">
-    Predicting Illegal Fishing using ML
-  </a> - Built a Random Forest model to predict vessel fishing activity from geospatial data and classify potential illegal activities based on Marine Protected Zones.
-</li>
-
-<li>
-  <a href="https://github.com/GurpreetSDeol/Public-Health-and-Air-Quality-Impact-Analysis-via-ETL-Data-Pipeline" target="_blank">
-    API Pollution Dashboard
-  </a> - Developed a real-time dashboard aggregating pollution and weather data for major global cities via public APIs.
-</li>
-
-    </ul>
-  </section>
-
-  <footer>
-    <p>Contact: Gurpreet.S.Deol@Outlook.com | 
-      <a href="https://github.com/GurpreetSDeol" target="_blank">GitHub</a> | 
-      <a href="https://www.linkedin.com/in/gurpreet-deol-19800b22b/" target="_blank">LinkedIn</a> |
-      <a href="CV - Gurpreet Deol.pdf" download class="button">Download Resume</a>
-    </p>
-  </footer>
-
-</body>
-</html>
-
-
+      pad
