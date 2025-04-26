@@ -4,16 +4,14 @@
   <meta charset="UTF-8">
   <title>Gurpreet Deol - Portfolio</title>
   <style>
-
 /* ✨ BODY */
 body {
   font-family: Arial, sans-serif;
   margin: 40px;
-  background-color: #071E22; /* Dark background for the body */
-  background-image: 
-    linear-gradient(45deg, rgba(251, 175, 0, 0.1) 25%, transparent 25%), 
-    linear-gradient(-45deg, rgba(251, 175, 0, 0.1) 25%, transparent 25%);
-  background-size: 20px 20px;
+  background-image: url('Dark blue.jpg'); /* Background image */
+  background-size: cover; /* Make sure the image covers the entire page */
+  background-position: center center; /* Center the image */
+  background-attachment: fixed; /* Keep the background fixed when scrolling */
   color: #EBEBEB; /* Light gray text color */
   text-align: center;
 }
@@ -21,11 +19,13 @@ body {
 /* ✨ HEADER */
 header {
   margin-bottom: 40px;
-  background-color: #071E22;
-  color: #EBEBEB;
+  background-color: rgba(7, 30, 34, 0.7); /* Semi-transparent dark background to make text readable */
+  padding: 20px;
+  border-radius: 8px;
 }
 
 header h1, header p {
+  color: #EBEBEB;
   margin-bottom: 10px;
 }
 
@@ -33,16 +33,17 @@ header h1, header p {
 .button {
   display: inline-block;
   padding: 10px 20px;
-  background-color: #FBAF00; /* Warm yellow */
+  background-color: #FBAF00; /* Bright yellow button */
   color: white;
   border-radius: 5px;
   text-decoration: none;
   font-weight: bold;
   transition: background-color 0.3s ease, transform 0.3s ease;
+  margin-top: 10px;
 }
 
 .button:hover {
-  background-color: #C1292E; /* Deep red on hover */
+  background-color: #C1292E; /* Darker red when hovered */
   color: white; /* Ensures text stays white */
   transform: translateY(-3px);
 }
@@ -59,17 +60,17 @@ header h1, header p {
 }
 
 .skills-grid div {
-  background: #1B263B; 
+  background: rgba(27, 38, 59, 0.7); /* Semi-transparent dark blue background */
   padding: 15px;
   border-radius: 8px;
-  box-shadow: 0 2px 5px rgba(255,255,255,0.1);
+  box-shadow: 0 2px 5px rgba(255, 255, 255, 0.1);
   width: 90%;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .skills-grid div:hover {
   transform: translateY(-5px);
-  box-shadow: 0 4px 15px rgba(27,152,224,0.4);
+  box-shadow: 0 4px 15px rgba(27, 152, 224, 0.4); /* Blue glow on hover */
 }
 
 /* ✨ PROJECT LIST */
@@ -82,7 +83,7 @@ header h1, header p {
 }
 
 .projects-list li {
-  background: #1B263B; 
+  background: rgba(27, 38, 59, 0.7); /* Same semi-transparent dark blue for the projects */
   padding: 20px;
   margin: 15px 0;
   border-radius: 8px;
@@ -91,13 +92,13 @@ header h1, header p {
 
 .projects-list li:hover {
   transform: translateY(-5px);
-  box-shadow: 0 4px 15px rgba(27,152,224,0.4);
+  box-shadow: 0 4px 15px rgba(27, 152, 224, 0.4); /* Same hover effect */
 }
 
 .projects-list a {
   font-size: 18px;
   font-weight: bold;
-  color: #FBAF00; 
+  color: #FBAF00; /* Bright yellow for project titles */
 }
 
 .projects-list p {
@@ -109,21 +110,24 @@ header h1, header p {
 /* ✨ FOOTER */
 footer {
   margin-top: 60px;
+  background-color: rgba(7, 30, 34, 0.8); /* Dark background with some opacity */
+  padding: 20px;
+  border-radius: 8px;
 }
 
 footer p {
   font-size: 14px;
-  color: #A9B5C2; 
+  color: #A9B5C2; /* Softer gray for footer text */
 }
 
 /* ✨ LINKS */
 a {
-  color: #FBAF00; 
+  color: #FBAF00; /* Bright yellow links */
   text-decoration: none;
 }
 
 a:hover {
-  color: #C1292E; 
+  color: #C1292E; /* Change to red when hovered */
 }
 
 
