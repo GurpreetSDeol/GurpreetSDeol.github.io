@@ -4,129 +4,122 @@
   <meta charset="UTF-8">
   <title>Gurpreet Deol - Portfolio</title>
   <style>
-    /* ✨ BODY */
-    body {
-      font-family: Arial, sans-serif;
-      margin: 40px;
-      background-color: #0D1B2A;
-      color: #E0E1DD;
-      text-align: center;
-    }
+/* ✨ BODY */
+body {
+  font-family: Arial, sans-serif;
+  margin: 40px;
+  background-color: #133C55; /* Dark blue background for the body */
+  color: #EBEBEB; /* Light gray text color for easy readability */
+  text-align: center;
+}
 
-    /* ✨ HEADER */
-    header {
-      margin-bottom: 40px;
-    }
+/* ✨ HEADER */
+header {
+  margin-bottom: 40px;
+  background-color: #133C55; /* Dark blue header background */
+  color: #EBEBEB; /* Light gray text */
+}
 
-    header h1, header p {
-      color: #E0E1DD;
-      margin-bottom: 10px;
-    }
+header h1, header p {
+  margin-bottom: 10px;
+}
 
-    /* ✨ SECTION HEADINGS */
-    h2 {
-      color: #1B98E0;
-      border-bottom: 2px solid #1B98E0;
-      display: inline-block;
-      margin-bottom: 20px;
-    }
+/* ✨ BUTTONS */
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #FBAF00; /* Warm yellow for the download resume button */
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
 
-    /* ✨ LINKS */
-    a {
-      color: #1B98E0;
-      text-decoration: none;
-    }
+.button:hover {
+  background-color: #00AF54; /* Vibrant green on hover */
+  transform: translateY(-3px);
+}
 
-    a:hover {
-      text-decoration: underline;
-    }
+/* ✨ SKILLS GRID */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  justify-items: center;
+  max-width: 1000px;
+  margin: 0 auto;
+  margin-top: 20px;
+}
 
-    /* ✨ SKILLS GRID */
-    .skills-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 20px;
-      justify-items: center;
-      max-width: 1000px;
-      margin: 0 auto;
-      margin-top: 20px;
-    }
+.skills-grid div {
+  background: #1B263B; /* Dark gray-blue for skill blocks */
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(255,255,255,0.1);
+  width: 90%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
 
-    .skills-grid div {
-      background: #1B263B;
-      padding: 15px;
-      border-radius: 8px;
-      box-shadow: 0 2px 5px rgba(255,255,255,0.1);
-      width: 90%;
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
+.skills-grid div:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 15px rgba(27,152,224,0.4); /* Blue glow effect */
+}
 
-    .skills-grid div:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 4px 15px rgba(27,152,224,0.4); /* Blue glow on hover */
-    }
+/* ✨ PROJECT LIST */
+.projects-list {
+  list-style-type: none;
+  padding: 0;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: left;
+}
 
-    /* ✨ PROJECT LIST */
-    .projects-list {
-      list-style-type: none;
-      padding: 0;
-      max-width: 800px;
-      margin: 0 auto;
-      text-align: left;
-    }
+.projects-list li {
+  background: #1B263B; /* Dark background for project list items */
+  padding: 20px;
+  margin: 15px 0;
+  border-radius: 8px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
 
-    .projects-list li {
-      background: #1B263B;
-      padding: 20px;
-      margin: 15px 0;
-      border-radius: 8px;
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
+.projects-list li:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 15px rgba(27,152,224,0.4); /* Blue glow effect */
+}
 
-    .projects-list li:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 4px 15px rgba(27,152,224,0.4);
-    }
+.projects-list a {
+  font-size: 18px;
+  font-weight: bold;
+  color: #FBAF00; /* Gold/yellow color for project links */
+}
 
-    .projects-list a {
-      font-size: 18px;
-      font-weight: bold;
-      color: #1B98E0;
-    }
+.projects-list p {
+  font-size: 16px;
+  margin-top: 5px;
+  color: #EBEBEB; /* Light gray text for descriptions */
+}
 
-    .projects-list p {
-      font-size: 16px;
-      margin-top: 5px;
-      color: #E0E1DD;
-    }
+/* ✨ FOOTER */
+footer {
+  margin-top: 60px;
+}
 
-    /* ✨ DOWNLOAD RESUME BUTTON */
-    .button {
-      display: inline-block;
-      padding: 10px 20px;
-      background-color: #1B98E0;
-      color: white;
-      border-radius: 5px;
-      text-decoration: none;
-      font-weight: bold;
-      transition: background-color 0.3s ease, transform 0.3s ease;
-      margin-top: 10px;
-    }
+footer p {
+  font-size: 14px;
+  color: #A9B5C2; /* Subtle footer color */
+}
 
-    .button:hover {
-      background-color: #3AA7E3;
-      transform: translateY(-3px);
-    }
+/* ✨ LINKS */
+a {
+  color: #1B98E0; /* Bright blue links */
+  text-decoration: none;
+}
 
-    /* ✨ FOOTER */
-    footer {
-      margin-top: 60px;
-    }
+a:hover {
+  color: #C1292E; /* Red color on hover for links */
+}
 
-    footer p {
-      font-size: 14px;
-      color: #A9B5C2;
-    }
   </style>
 </head>
 
