@@ -57,6 +57,22 @@
       font-size: 0.9em;
       color: #555;
     }
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.skills-grid div {
+  background: white;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+    
   </style>
 </head>
 <body>
@@ -69,13 +85,13 @@
 
 <section>
   <h2>Skills</h2>
-  <ul>
-    <li><strong>Tech Stack:</strong> Python, SQL, Matlab, R</li>
-    <li><strong>Data Libraries:</strong> Pandas, Numpy, Scikit-Learn, Keras, TensorFlow, Geopandas, Psycopg2</li>
-    <li><strong>Reporting & Data Visualisation:</strong> Microsoft PowerBI, Excel, Matplotlib, Seaborn, LaTex</li>
-    <li><strong>Big Data Tools:</strong> PySpark, Hadoop</li>
-    <li><strong>Other Tools:</strong> Git/GitHub, Docker, Visual Studio Code, PostGIS, Jupyter Notebook</li>
-  </ul>
+  <div class="skills-grid">
+    <div><strong>Tech Stack:</strong> Python, SQL, Matlab, R</div>
+    <div><strong>Data Libraries:</strong> Pandas, Numpy, Scikit-Learn, Keras, TensorFlow, Geopandas, Psycopg2</div>
+    <div><strong>Reporting & Visualization:</strong> PowerBI, Excel, Matplotlib, Seaborn, LaTeX</div>
+    <div><strong>Big Data Tools:</strong> PySpark, Hadoop</div>
+    <div><strong>Other Tools:</strong> Git/GitHub, Docker, VS Code, PostGIS, Jupyter Notebook</div>
+  </div>
 </section>
 
   
@@ -100,7 +116,7 @@
   <footer>
     <p>Contact: Gurpreet.S.Deol@Outlook.com | 
       <a href="https://github.com/GurpreetSDeol" target="_blank">GitHub</a> | 
-      <a href="https://www.linkedin.com/in/gurpreet-deol-19800b22b/" target="_blank">LinkedIn</a> 
+      <a href="https://www.linkedin.com/in/gurpreet-deol-19800b22b/" target="_blank">LinkedIn</a> |
       <a href="CV - Gurpreet Deol.pdf" download class="button">Download Resume</a>
     </p>
   </footer>
