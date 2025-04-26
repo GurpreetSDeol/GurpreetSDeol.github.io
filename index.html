@@ -6,73 +6,49 @@
 </head>
 
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 40px;
-      background-color: #0D1B2A; 
-     color: #E0E1DD;
-    }
-
-    header {
-      text-align: center;
-      padding-bottom: 20px;
-    }
-
-    h1 {
-      font-size: 3em;
-      margin-bottom: 0.2em;
-    }
-
-    h2 {
-      color: #004080;
-      border-bottom: 2px solid #004080;
-      padding-bottom: 5px;
-    }
-
-    ul {
-      list-style-type: none;
-      padding: 0;
-    }
-
-    li {
-      background: white;
-      margin-bottom: 10px;
-      padding: 15px;
-      border-radius: 8px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    }
-
-    a {
-      color: #0066cc;
-      text-decoration: none;
-    }
-
-    a:hover {
-      text-decoration: underline;
-    }
-
-    footer {
-      text-align: center;
-      margin-top: 40px;
-      font-size: 0.9em;
-      color: #555;
-    }
-
-.skills-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 20px;
-  margin-top: 20px;
+    
+body {
+  font-family: Arial, sans-serif;
+  margin: 40px;
+  background-color: #0D1B2A; /* Dark navy background */
+  color: #E0E1DD; /* Light text */
 }
 
-.skills-grid div {
-  background: white;
+header h1, header p {
+  color: #E0E1DD;
+}
+
+h2 {
+  color: #1B98E0; /* Bright blue headings */
+  border-bottom: 2px solid #1B98E0;
+  padding-bottom: 5px;
+}
+
+a {
+  color: #1B98E0;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.skills-grid div, li {
+  background: #1B263B; /* Darker blue-gray cards */
   padding: 15px;
   border-radius: 8px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 5px rgba(255,255,255,0.1); /* Soft white shadow */
 }
 
-    
+.button {
+  background-color: #1B98E0;
+  color: white;
+}
+
+.button:hover {
+  background-color: #3AA7E3;
+}
+
   </style>
 </head>
 <body>
