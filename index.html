@@ -42,7 +42,7 @@ section h2 {
   color: #EBEBEB;
 }
 
-/* ✨ BUTTONS */
+/* ✨ BUTTON */
 .button {
   display: inline-block;
   padding: 10px 20px;
@@ -51,6 +51,7 @@ section h2 {
   border-radius: 5px;
   text-decoration: none;
   font-weight: bold;
+  font-size: 18px;
   transition: background-color 0.3s ease, transform 0.3s ease;
   margin-top: 10px;
 }
@@ -58,4 +59,158 @@ section h2 {
 .button:hover {
   background-color: #C1292E;
   color: white;
-  transform: translateY
+  transform: translateY(-3px);
+}
+
+/* ✨ SKILLS GRID */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  justify-items: center;
+  max-width: 1000px;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+.skills-grid div {
+  background: rgba(27, 38, 59, 0.5);
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(255, 255, 255, 0.1);
+  width: 90%;
+  font-size: 18px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skills-grid div:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 15px rgba(27, 152, 224, 0.4);
+}
+
+/* ✨ PROJECT LIST */
+.projects-list {
+  list-style-type: none;
+  padding: 0;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.projects-list li {
+  background: rgba(27, 38, 59, 0.5);
+  padding: 20px;
+  margin: 15px 0;
+  border-radius: 8px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  font-size: 18px;
+}
+
+.projects-list li:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 15px rgba(27, 152, 224, 0.4);
+}
+
+.projects-list a {
+  font-weight: bold;
+  color: #FBAF00;
+  font-size: 18px;
+}
+
+.projects-list p {
+  margin-top: 5px;
+  color: #EBEBEB;
+  font-size: 18px;
+}
+
+/* ✨ FOOTER */
+footer {
+  margin-top: 60px;
+  background-color: rgba(7, 30, 34, 0.5);
+  padding: 20px;
+  border-radius: 8px;
+  font-size: 18px;
+}
+
+footer p {
+  color: #A9B5C2;
+}
+
+/* ✨ LINKS */
+a {
+  color: #FBAF00;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #C1292E;
+}
+
+/* ✨ HIGHLIGHTING WORDS BEFORE SEMICOLONS */
+.skills-grid div span {
+  color: #FBAF00;
+}
+
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>Gurpreet Deol</h1>
+    <p>I’m a Data Scientist with a background in Physics and expertise in building scalable data pipelines, 
+      predictive ML models and dynamic dashboards. I enjoy working on unique and challenging projects and exploring the wide capabilities and applications of data in the real world.</p>
+    <a href="CV - Gurpreet Deol.pdf" download class="button">Download Resume</a>
+  </header>
+
+  <section>
+    <h2>Skills</h2>
+    <div class="skills-grid">
+      <div><span>Tech Stack:</span> Python, SQL, Matlab, R</div>
+      <div><span>Data Libraries:</span> Pandas, Numpy, Scikit-Learn, Keras, TensorFlow, Geopandas, Psycopg2</div>
+      <div><span>Reporting & Visualization:</span> PowerBI, Excel, Matplotlib, Seaborn, LaTeX</div>
+      <div><span>Cloud Tools:</span> AWS, Azure</div>
+      <div><span>Big Data Tools:</span> PySpark, Hadoop</div>
+      <div><span>Other Tools:</span> Git/GitHub, Docker, VS Code, PostGIS, Jupyter Notebook</div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Projects</h2>
+    <div class="projects-list">
+      <li>
+        <a href="https://github.com/GurpreetSDeol/Predicting-Illegal-Fishing-using-Machine-Learning" target="_blank">
+          Predicting Illegal Fishing using ML
+        </a>
+        <p>Developed a 97% accurate Random Forest model to predict potential illegal fishing activity from geospatial data.</p>
+      </li>
+      <li>
+        <a href="https://github.com/GurpreetSDeol/Public-Health-and-Air-Quality-Impact-Analysis-via-ETL-Data-Pipeline" target="_blank">
+          API Pollution Dashboard
+        </a>
+        <p>Developed a data pipeline to monitor real-time pollution and weather data for major global cities.</p>
+      </li>
+      <li>
+        <a href="https://github.com/GurpreetSDeol/Football-Analysis-using-PCA" target="_blank">
+          Football Analysis using Principal Component Analysis
+        </a>
+        <p>Analysed football data across 13 years to understand tactical shifts and trends in playing styles across Europe.</p>
+      </li>
+      <li>
+        <a href="https://github.com/GurpreetSDeol/Euro-2024-Match-Predictor-" target="_blank">
+          Euro 2024 Match Predictor
+        </a>
+        <p>Predicted winners of Euro 2024 using a Random Forest model, correctly predicting 6/8 Quarter Finalists.</p>
+      </li>
+    </div>
+  </section>
+
+  <footer>
+    <p>Contact: Gurpreet.S.Deol@Outlook.com | 
+      <a href="https://github.com/GurpreetSDeol" target="_blank">GitHub</a> | 
+      <a href="https://www.linkedin.com/in/gurpreet-deol-19800b22b/" target="_blank">LinkedIn</a>
+    </p>
+  </footer>
+
+</body>
+</html>
