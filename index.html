@@ -2,163 +2,168 @@
 <html lang="en">
 <head>
   <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-TMQWR8QYWF"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-TMQWR8QYWF');
-</script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-TMQWR8QYWF"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-TMQWR8QYWF');
+  </script>
   <meta charset="UTF-8"> 
   <title>Gurpreet Deol - Portfolio</title>
   <style>
-/* ✨ BODY */
-body {
-  font-family: Arial, sans-serif;
-  margin: 40px;
-  background-image: url('modern-abstract-background.jpg'); 
-  background-size: cover;
-  background-position: center center;
-  background-attachment: fixed;
-  color: #EBEBEB;
-  text-align: center;
-}
+    /* ✨ BODY */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 40px;
+      background-image: url('modern-abstract-background.jpg'); 
+      background-size: cover;
+      background-position: center center;
+      background-attachment: fixed;
+      color: #EBEBEB;
+      text-align: center;
+      font-size: 18px; /* Base font size */
+    }
 
-/* ✨ HEADER */
-header {
-  margin-bottom: 40px;
-  background-color: rgba(7, 30, 34, 0.5);
-  padding: 20px;
-  border-radius: 8px;
-}
+    /* ✨ HEADER */
+    header {
+      margin-bottom: 40px;
+      background-color: rgba(7, 30, 34, 0.5);
+      padding: 20px;
+      border-radius: 8px;
+    }
 
-header h1 {
-  font-size: 48px;
-  color: #EBEBEB;
-  margin-bottom: 10px;
-}
+    header h1 {
+      font-size: 48px;
+      color: #EBEBEB;
+      margin-bottom: 10px;
+    }
 
-header p {
-  font-size: 18px;
-  color: #EBEBEB;
-}
+    header p {
+      font-size: 18px;
+      color: #EBEBEB;
+    }
 
-/* ✨ SECTION HEADERS */
-section h2 {
-  font-size: 36px;
-  margin-bottom: 20px;
-  color: #EBEBEB;
-}
+    /* ✨ SECTION HEADERS */
+    section h2 {
+      font-size: 36px;
+      margin-bottom: 20px;
+      color: #EBEBEB;
+    }
 
-/* ✨ BUTTON */
-.button {
-  display: inline-block;
-  padding: 10px 20px;
-  background-color: #FBAF00;
-  color: white;
-  border-radius: 5px;
-  text-decoration: none;
-  font-weight: bold;
-  font-size: 18px;
-  transition: background-color 0.3s ease, transform 0.3s ease;
-  margin-top: 10px;
-}
+    /* ✨ BUTTON */
+    .button {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #FBAF00;
+      color: white; /* Ensure text is white */
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 18px;
+      transition: background-color 0.3s ease, transform 0.3s ease;
+      margin-top: 10px;
+    }
 
-.button:hover {
-  background-color: #C1292E;
-  color: white;
-  transform: translateY(-3px);
-}
+    .button:hover {
+      background-color: #C1292E;
+      color: white;
+      transform: translateY(-3px);
+    }
 
-/* ✨ SKILLS GRID */
-.skills-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
-  justify-items: center;
-  max-width: 1000px;
-  margin: 0 auto;
-  margin-top: 20px;
-}
+    /* Fix button text visibility */
+    a.button {
+      color: white !important;
+    }
 
-.skills-grid div {
-  background: rgba(27, 38, 59, 0.5);
-  padding: 15px;
-  border-radius: 8px;
-  box-shadow: 0 2px 5px rgba(255, 255, 255, 0.1);
-  width: 90%;
-  font-size: 18px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
+    /* ✨ SKILLS GRID */
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      justify-items: center;
+      max-width: 1000px;
+      margin: 0 auto;
+      margin-top: 20px;
+    }
 
-.skills-grid div:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 4px 15px rgba(27, 152, 224, 0.4);
-}
+    .skills-grid div {
+      background: rgba(27, 38, 59, 0.5);
+      padding: 15px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(255, 255, 255, 0.1);
+      width: 90%;
+      font-size: 18px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
 
-/* ✨ PROJECT LIST */
-.projects-list {
-  list-style-type: none;
-  padding: 0;
-  max-width: 800px;
-  margin: 0 auto;
-  text-align: left;
-}
+    .skills-grid div:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 4px 15px rgba(27, 152, 224, 0.4);
+    }
 
-.projects-list li {
-  background: rgba(27, 38, 59, 0.5);
-  padding: 20px;
-  margin: 15px 0;
-  border-radius: 8px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  font-size: 18px;
-}
+    /* ✨ PROJECT LIST */
+    .projects-list {
+      list-style-type: none;
+      padding: 0;
+      max-width: 800px;
+      margin: 0 auto;
+      text-align: left;
+    }
 
-.projects-list li:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 4px 15px rgba(27, 152, 224, 0.4);
-}
+    .projects-list li {
+      background: rgba(27, 38, 59, 0.5);
+      padding: 20px;
+      margin: 15px 0;
+      border-radius: 8px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      /* font-size: 18px;  <-- Removed, inherited from body */
+    }
 
-.projects-list a {
-  font-weight: bold;
-  color: #FBAF00;
-  font-size: 18px;
-}
+    .projects-list li:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 4px 15px rgba(27, 152, 224, 0.4);
+    }
 
-.projects-list p {
-  margin-top: 5px;
-  color: #EBEBEB;
-  font-size: 18px;
-}
+    .projects-list a {
+      font-weight: bold;
+      color: #FBAF00;
+      font-size: 18px;
+    }
 
-/* ✨ FOOTER */
-footer {
-  margin-top: 60px;
-  background-color: rgba(7, 30, 34, 0.5);
-  padding: 20px;
-  border-radius: 8px;
-  font-size: 18px;
-}
+    .projects-list p {
+      margin-top: 5px;
+      color: #EBEBEB;
+      /* font-size: 18px;  <-- Removed, inherited from body */
+    }
 
-footer p {
-  color: #A9B5C2;
-}
+    /* ✨ FOOTER */
+    footer {
+      margin-top: 60px;
+      background-color: rgba(7, 30, 34, 0.5);
+      padding: 20px;
+      border-radius: 8px;
+      font-size: 18px;
+    }
 
-/* ✨ LINKS */
-a {
-  color: #FBAF00;
-  text-decoration: none;
-}
+    footer p {
+      color: #A9B5C2;
+    }
 
-a:hover {
-  color: #C1292E;
-}
+    /* ✨ LINKS */
+    a {
+      color: #FBAF00;
+      text-decoration: none;
+    }
 
-/* ✨ HIGHLIGHTING WORDS BEFORE SEMICOLONS */
-.skills-grid div span {
-  color: #FBAF00;
-}
+    a:hover {
+      color: #C1292E;
+    }
+
+    /* ✨ HIGHLIGHTING WORDS BEFORE SEMICOLONS */
+    .skills-grid div span {
+      color: #FBAF00;
+    }
 
   </style>
 </head>
@@ -184,44 +189,42 @@ a:hover {
     </div>
   </section>
 
- <section>
-  <h2>Projects</h2>
-  <div class="projects-list">
-<li>
-  <a href="https://github.com/GurpreetSDeol/Predicting-Illegal-Fishing-using-Machine-Learning" target="_blank">
-    Predicting Illegal Fishing using Random Forest (GitHub)
-  </a><br>
-  <a href="https://predicting-illegal-fishing-using-machine-learning.streamlit.app/" target="_blank">
-    Web Application
-  </a>
-  <p>Built an interactive Streamlit application that applies AIS data and spatial analysis to identify potential illegal fishing within Marine Protected Areas. Developed a Random Forest model achieving 94% accuracy in classifying vessel activity as fishing or non-fishing.</p>
-</li>
+  <section>
+    <h2>Projects</h2>
+    <div class="projects-list">
+      <li>
+        <a href="https://github.com/GurpreetSDeol/Predicting-Illegal-Fishing-using-Machine-Learning" target="_blank">
+          Predicting Illegal Fishing using Random Forest (GitHub)
+        </a><br>
+        <a href="https://predicting-illegal-fishing-using-machine-learning.streamlit.app/" target="_blank">
+          Web Application
+        </a>
+        <p>Built an interactive Streamlit application that applies AIS data and spatial analysis to identify potential illegal fishing within Marine Protected Areas. Developed a Random Forest model achieving 94% accuracy in classifying vessel activity as fishing or non-fishing.</p>
+      </li>
 
-<li>
-  <a href="https://github.com/GurpreetSDeol/Public-Health-and-Air-Quality-Impact-Analysis-via-ETL-Data-Pipeline" target="_blank">
-    Public Health & Air Quality Dashboard (GitHub)
-  </a><br>
-  <a href="https://public-health-and-air-quality-dashboard.streamlit.app/" target="_blank">
-    Live Dashboard
-  </a>
-  <p>Developed a complete ETL pipeline and interactive Streamlit dashboard to track and visualise both real-time and historical pollution, weather, and health data across major global cities. Integrated WHO datasets to assess the public health impact of ambient air pollution, and created dynamic visualisations enabling cross-city comparisons.</p>
-</li>
+      <li>
+        <a href="https://github.com/GurpreetSDeol/Public-Health-and-Air-Quality-Impact-Analysis-via-ETL-Data-Pipeline" target="_blank">
+          Public Health & Air Quality Dashboard (GitHub)
+        </a><br>
+        <a href="https://public-health-and-air-quality-dashboard.streamlit.app/" target="_blank">
+          Live Dashboard
+        </a>
+        <p>Developed a complete ETL pipeline and interactive Streamlit dashboard to track and visualise both real-time and historical pollution, weather, and health data across major global cities. Integrated WHO datasets to assess the public health impact of ambient air pollution, and created dynamic visualisations enabling cross-city comparisons.</p>
+      </li>
 
-<li>
-  <p><strong>MSc Final Project: Football Analysis using Principal Component Analysis</strong></p>
-  <a href="Sports Data Analytics project - Gurpreet Deol.pdf" download class="button">Download MSc Thesis</a>
-  <p>Analysed 13 years of football data from Europe's top five leagues (Premier League, La Liga, Serie A, Bundesliga, Ligue 1) to uncover tactical trends and shifts in playing styles. Applied machine learning techniques including Principal Component Analysis and K-Means clustering to examine team performance in areas such as defense, passing, and finishing. Identified a league-wide evolution toward possession-based play, while also comparing competitiveness and stylistic variance across leagues. Key findings highlighted La Liga’s duopoly, Serie A’s competitiveness, and emerging title contenders in the Premier League.</p>
-</li>
+      <li>
+        <p><strong>MSc Final Project: Football Analysis using Principal Component Analysis</strong></p>
+        <a href="Sports Data Analytics project - Gurpreet Deol.pdf" download class="button">Download MSc Thesis</a>
+        <p>Analysed 13 years of football data from Europe's top five leagues (Premier League, La Liga, Serie A, Bundesliga, Ligue 1) to uncover tactical trends and shifts in playing styles. Applied machine learning techniques including Principal Component Analysis and K-Means clustering to examine team performance in areas such as defense, passing, and finishing. Identified a league-wide evolution toward possession-based play, while also comparing competitiveness and stylistic variance across leagues. Key findings highlighted La Liga’s duopoly, Serie A’s competitiveness, and emerging title contenders in the Premier League.</p>
+      </li>
 
-<li>
-  <p><strong>BSc Physics Final Year Project: Simulations of Electrical Resistance in 2 Dimensions</strong></p>
-  <a href="PH3110 Experimental or Theoretical Project Report.pdf" download class="button">Download BSc Thesis</a>
-  <p>Simulated the resistance of 2D conductors with arbitrary geometries using Python and the finite difference method. Applied a 100V potential across two ohmic contacts to numerically solve for the electric potential and electric field distribution. The project explored how shape and boundary conditions influence current flow and overall resistance in conductive materials.</p>
-</li>
-
-  </div>
-</section>
-
+      <li>
+        <p><strong>BSc Physics Final Year Project: Simulations of Electrical Resistance in 2 Dimensions</strong></p>
+        <a href="PH3110 Experimental or Theoretical Project Report.pdf" download class="button">Download BSc Thesis</a>
+        <p>Simulated the resistance of 2D conductors with arbitrary geometries using Python and the finite difference method. Applied a 100V potential across two ohmic contacts to numerically solve for the electric potential and electric field distribution. The project explored how shape and boundary conditions influence current flow and overall resistance in conductive materials.</p>
+      </li>
+    </div>
+  </section>
 
   <footer>
     <p>Contact: Gurpreet.S.Deol@Outlook.com | 
@@ -232,3 +235,4 @@ a:hover {
 
 </body>
 </html>
+
