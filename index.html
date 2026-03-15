@@ -1,238 +1,286 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-TMQWR8QYWF"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-TMQWR8QYWF');
-  </script>
-  <meta charset="UTF-8"> 
-  <title>Gurpreet Deol - Portfolio</title>
-  <style>
-    /* ✨ BODY */
-    body {
-      font-family: Arial, sans-serif;
-      margin: 40px;
-      background-image: url('modern-abstract-background.jpg'); 
-      background-size: cover;
-      background-position: center center;
-      background-attachment: fixed;
-      color: #EBEBEB;
-      text-align: center;
-      font-size: 18px; /* Base font size */
-    }
 
-    /* ✨ HEADER */
-    header {
-      margin-bottom: 40px;
-      background-color: rgba(7, 30, 34, 0.5);
-      padding: 20px;
-      border-radius: 8px;
-    }
+<meta charset="UTF-8">
+<title>Gurpreet Deol | Data Science Portfolio</title>
 
-    header h1 {
-      font-size: 48px;
-      color: #EBEBEB;
-      margin-bottom: 10px;
-    }
+<style>
 
-    header p {
-      font-size: 18px;
-      color: #EBEBEB;
-    }
+/* BODY */
 
-    /* ✨ SECTION HEADERS */
-    section h2 {
-      font-size: 36px;
-      margin-bottom: 20px;
-      color: #EBEBEB;
-    }
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  margin: 40px;
+  background-image: url('modern-abstract-background.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: #f1f5f9;
+  text-align: center;
+  font-size: 18px;
+}
 
-    /* ✨ BUTTON */
-    .button {
-      display: inline-block;
-      padding: 10px 20px;
-      background-color: #FBAF00;
-      color: white; /* Ensure text is white */
-      border-radius: 5px;
-      text-decoration: none;
-      font-weight: bold;
-      font-size: 18px;
-      transition: background-color 0.3s ease, transform 0.3s ease;
-      margin-top: 10px;
-    }
+/* HEADER */
 
-    .button:hover {
-      background-color: #C1292E;
-      color: white;
-      transform: translateY(-3px);
-    }
+header {
+  margin-bottom: 40px;
+  background: rgba(15, 23, 42, 0.65);
+  padding: 30px;
+  border-radius: 10px;
+  backdrop-filter: blur(6px);
+}
 
-    /* Fix button text visibility */
-    a.button {
-      color: white !important;
-    }
+header h1 {
+  font-size: 50px;
+  margin-bottom: 10px;
+  color: #4cc9f0;
+}
 
-    /* ✨ SKILLS GRID */
-    .skills-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 20px;
-      justify-items: center;
-      max-width: 1000px;
-      margin: 0 auto;
-      margin-top: 20px;
-    }
+header p {
+  font-size: 19px;
+  max-width: 900px;
+  margin: auto;
+  line-height: 1.6;
+}
 
-    .skills-grid div {
-      background: rgba(27, 38, 59, 0.5);
-      padding: 15px;
-      border-radius: 8px;
-      box-shadow: 0 2px 5px rgba(255, 255, 255, 0.1);
-      width: 90%;
-      font-size: 18px;
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
+/* SECTION TITLES */
 
-    .skills-grid div:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 4px 15px rgba(27, 152, 224, 0.4);
-    }
+section h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: #90dbf4;
+  letter-spacing: 1px;
+}
 
-    /* ✨ PROJECT LIST */
-    .projects-list {
-      list-style-type: none;
-      padding: 0;
-      max-width: 800px;
-      margin: 0 auto;
-      text-align: left;
-    }
+/* BUTTON */
 
-    .projects-list li {
-      background: rgba(27, 38, 59, 0.5);
-      padding: 20px;
-      margin: 15px 0;
-      border-radius: 8px;
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-      /* font-size: 18px;  <-- Removed, inherited from body */
-    }
+.button {
+  display: inline-block;
+  padding: 10px 22px;
+  background: linear-gradient(135deg,#4cc9f0,#7b68ee);
+  color: white;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  margin-top: 10px;
+}
 
-    .projects-list li:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 4px 15px rgba(27, 152, 224, 0.4);
-    }
+.button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(76,201,240,0.4);
+}
 
-    .projects-list a {
-      font-weight: bold;
-      color: #FBAF00;
-      font-size: 18px;
-    }
+/* SKILLS GRID */
 
-    .projects-list p {
-      margin-top: 5px;
-      color: #EBEBEB;
-      /* font-size: 18px;  <-- Removed, inherited from body */
-    }
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 20px;
+  max-width: 1000px;
+  margin: auto;
+}
 
-    /* ✨ FOOTER */
-    footer {
-      margin-top: 60px;
-      background-color: rgba(7, 30, 34, 0.5);
-      padding: 20px;
-      border-radius: 8px;
-      font-size: 18px;
-    }
+.skills-grid div {
+  background: rgba(30,41,59,0.6);
+  padding: 18px;
+  border-radius: 10px;
+  backdrop-filter: blur(6px);
+  transition: all 0.3s ease;
+}
 
-    footer p {
-      color: #A9B5C2;
-    }
+.skills-grid div:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 6px 25px rgba(76,201,240,0.3);
+}
 
-    /* ✨ LINKS */
-    a {
-      color: #FBAF00;
-      text-decoration: none;
-    }
+.skills-grid span {
+  color: #4cc9f0;
+  font-weight: bold;
+}
 
-    a:hover {
-      color: #C1292E;
-    }
+/* PROJECT LIST */
 
-    /* ✨ HIGHLIGHTING WORDS BEFORE SEMICOLONS */
-    .skills-grid div span {
-      color: #FBAF00;
-    }
+.projects-list {
+  list-style: none;
+  max-width: 850px;
+  margin: auto;
+  padding: 0;
+  text-align: left;
+}
 
-  </style>
+.projects-list li {
+  background: rgba(30,41,59,0.6);
+  padding: 22px;
+  margin: 18px 0;
+  border-radius: 10px;
+  backdrop-filter: blur(6px);
+  transition: all 0.3s ease;
+}
+
+.projects-list li:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 6px 25px rgba(76,201,240,0.3);
+}
+
+.projects-list strong {
+  font-size: 20px;
+  color: #4cc9f0;
+}
+
+.projects-list a {
+  color: #7b68ee;
+  font-weight: bold;
+}
+
+.projects-list p {
+  margin-top: 8px;
+  line-height: 1.6;
+}
+
+/* FOOTER */
+
+footer {
+  margin-top: 60px;
+  background: rgba(15,23,42,0.65);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+footer a {
+  color: #4cc9f0;
+}
+
+footer a:hover {
+  color: #7b68ee;
+}
+
+</style>
 </head>
+
 
 <body>
 
-  <header>
-    <h1>Gurpreet Deol</h1>
-    <p>I’m a Data Scientist with a background in Physics and expertise in building scalable data pipelines, 
-      predictive ML models and dynamic dashboards. I enjoy working on unique and challenging projects and exploring the wide capabilities and applications of data in the real world.</p>
-    <a href="CV - Gurpreet Deol.pdf" download class="button">Download Resume</a>
-  </header>
+<header>
 
-  <section>
-    <h2>Skills</h2>
-    <div class="skills-grid">
-      <div><span>Tech Stack:</span> Python, SQL, Matlab, R, Excel</div>
-      <div><span>Data Libraries:</span> Pandas, Numpy, Scikit-Learn, Keras, TensorFlow, Geopandas, Psycopg2</div>
-      <div><span>Reporting & Visualization:</span> PowerBI, Streamlit, Matplotlib, Seaborn, LaTeX</div>
-      <div><span>Cloud Tools:</span> AWS, Azure</div>
-      <div><span>Big Data Tools:</span> PySpark, Hadoop</div>
-      <div><span>Other Tools:</span> Git/GitHub, Docker, VS Code, PostGIS, Jupyter Notebook</div>
-    </div>
-  </section>
+<h1>Gurpreet Deol</h1>
 
-  <section>
-    <h2>Projects</h2>
-    <div class="projects-list">
-      
-    <li>
-      <p><strong>Predicting Illegal Fishing using Random Forest</strong></p>
-      <a href="https://predicting-illegal-fishing-using-machine-learning.streamlit.app/" target="_blank">
-        Web Application
-      </a><br>
-      <a href="https://github.com/GurpreetSDeol/Predicting-Illegal-Fishing-using-Machine-Learning" target="_blank" style="display:inline-block; margin-top:4px;">GitHub</a>
-      <p>Built an interactive Streamlit application that applies AIS data and spatial analysis to identify potential illegal fishing within Marine Protected Areas. Developed a Random Forest model achieving 94% accuracy in classifying vessel activity as fishing or non-fishing.</p>
-    </li>
-    
-    <li>
-      <p><strong>Public Health & Air Quality Dashboard</strong></p>
-      <a href="https://public-health-and-air-quality-dashboard.streamlit.app/" target="_blank">
-        Live Dashboard
-      </a><br>
-      <a href="https://github.com/GurpreetSDeol/Public-Health-and-Air-Quality-Impact-Analysis-via-ETL-Data-Pipeline" target="_blank" style="display:inline-block; margin-top:4px;">GitHub</a>
-      <p>Developed a complete ETL pipeline and interactive Streamlit dashboard to track and visualise both real-time and historical pollution, weather, and health data across major global cities. Integrated WHO datasets to assess the public health impact of ambient air pollution, and created dynamic visualisations enabling cross-city comparisons.</p>
-    </li>
+<p>
+Data Scientist with an MSc in Data Science and a background in Physics, specialising in machine learning, geospatial analytics and data pipelines.  
+Experienced in building end-to-end data solutions using Python, PostgreSQL/PostGIS and cloud tools, including predictive models for illegal fishing detection and environmental data dashboards.  
+I enjoy applying data science to real-world problems across sustainability, public health and analytics.
+</p>
+
+<a href="CV - Gurpreet Deol.pdf" download class="button">Download CV</a>
+
+</header>
 
 
-      <li>
-        <p><strong>MSc Final Project: Football Analysis using Principal Component Analysis</strong></p>
-        <a href="Sports Data Analytics project - Gurpreet Deol.pdf" download class="button">Download MSc Thesis</a>
-        <p>Analysed 13 years of football data from Europe's top five leagues to uncover tactical trends and shifts in playing styles. Applied machine learning techniques including Principal Component Analysis and K-Means clustering to examine team performance in areas such as defense, passing, and finishing. Identified a league-wide evolution toward possession-based play, while also comparing competitiveness and stylistic variance across leagues.</p>
-      </li>
+<section>
 
-      <li>
-        <p><strong>BSc Physics Final Year Project: Simulations of Electrical Resistance in 2 Dimensions</strong></p>
-        <a href="PH3110 Experimental or Theoretical Project Report.pdf" download class="button">Download BSc Thesis</a>
-        <p>Simulated the resistance of 2D conductors with arbitrary geometries using Python and the finite difference method. Applied a 100V potential across two ohmic contacts to numerically solve for the electric potential and electric field distribution. The project explored how shape and boundary conditions influence current flow and overall resistance in conductive materials.</p>
-      </li>
-    </div>
-  </section>
+<h2>Technical Skills</h2>
 
-  <footer>
-    <p>Contact: Gurpreet.S.Deol@Outlook.com | 
-      <a href="https://github.com/GurpreetSDeol" target="_blank">GitHub</a> | 
-      <a href="https://www.linkedin.com/in/gurpreet-deol-19800b22b/" target="_blank">LinkedIn</a>
-    </p>
-  </footer>
+<div class="skills-grid">
+
+<div><span>Programming:</span> Python, SQL, R, MATLAB</div>
+
+<div><span>Data Science:</span> Pandas, NumPy, Scikit-Learn, TensorFlow, Keras</div>
+
+<div><span>Data Engineering:</span> PostgreSQL, PostGIS, ETL Pipelines, APIs</div>
+
+<div><span>Cloud:</span> AWS (Lambda, EC2, S3), Azure</div>
+
+<div><span>Visualisation:</span> Power BI, Streamlit, Matplotlib, Seaborn</div>
+
+<div><span>Tools:</span> Docker, Git/GitHub, PySpark, Jupyter, VS Code</div>
+
+</div>
+
+</section>
+
+
+
+<section>
+
+<h2>Projects</h2>
+
+<ul class="projects-list">
+
+<li>
+
+<strong>Illegal Fishing Detection using Machine Learning</strong><br>
+
+<a href="https://predicting-illegal-fishing-using-machine-learning.streamlit.app/" target="_blank">Web Application</a> |
+<a href="https://github.com/GurpreetSDeol/Predicting-Illegal-Fishing-using-Machine-Learning" target="_blank">GitHub</a>
+
+<p>
+Built a Random Forest model achieving 94% accuracy to classify fishing activity from AIS vessel tracking data.  
+Engineered geospatial features including vessel speed patterns, distance from ports and proximity to marine protected areas.  
+Developed an interactive Streamlit application integrating Global Fishing Watch data to identify potential illegal fishing activity.
+</p>
+
+</li>
+
+
+<li>
+
+<strong>Public Health & Air Quality Dashboard</strong><br>
+
+<a href="https://public-health-and-air-quality-dashboard.streamlit.app/" target="_blank">Live Dashboard</a> |
+<a href="https://github.com/GurpreetSDeol/Public-Health-and-Air-Quality-Impact-Analysis-via-ETL-Data-Pipeline" target="_blank">GitHub</a>
+
+<p>
+Built an end-to-end ETL pipeline collecting pollution, weather and health data across major global cities.  
+Automated ingestion using Python APIs, Docker and PostgreSQL and developed an interactive Streamlit dashboard with geospatial visualisations and time-series analysis.  
+Integrated WHO datasets to explore relationships between air pollution exposure and mortality.
+</p>
+
+</li>
+
+
+<li>
+
+<strong>MSc Dissertation: Football Tactical Analysis with Machine Learning</strong><br>
+
+<a href="Sports Data Analytics project - Gurpreet Deol.pdf" download class="button">Download Thesis</a>
+
+<p>
+Analysed 13 seasons of football data using Principal Component Analysis and K-Means clustering to identify tactical evolution across Europe’s top leagues.  
+Built a dataset with over 2000 team-season records and 100+ performance metrics, revealing a shift towards possession-based play.
+</p>
+
+</li>
+
+
+<li>
+
+<strong>BSc Physics Project: Simulation of Electrical Resistance</strong><br>
+
+<a href="PH3110 Experimental or Theoretical Project Report.pdf" download class="button">Download Thesis</a>
+
+<p>
+Simulated electrical resistance in two-dimensional conductive geometries using Python and numerical methods.  
+Modelled electric potential fields using the finite difference method to analyse how geometry and boundary conditions influence current flow.
+</p>
+
+</li>
+
+</ul>
+
+</section>
+
+
+<footer>
+
+<p>
+Contact: Gurpreet.S.Deol@Outlook.com |
+<a href="https://github.com/GurpreetSDeol">GitHub</a> |
+<a href="https://www.linkedin.com/in/gurpreet-deol-19800b22b/">LinkedIn</a>
+</p>
+
+</footer>
+
 
 </body>
 </html>
-
