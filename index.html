@@ -67,11 +67,14 @@ section h2 {
   margin-top: 10px;
 }
 
-.button:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 6px 20px rgba(76,201,240,0.4);
+/* Force button text to stay white */
+.button:link,
+.button:visited,
+.button:hover,
+.button:active {
+  color: white;
 }
-
+  
 /* SKILLS GRID */
 
 .skills-grid {
